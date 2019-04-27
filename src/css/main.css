@@ -76,12 +76,27 @@ BANNER
 MODAL
 */
 
- .modal-wrap {
-    top: 20%;
+.modal-wrap {
+    top: 25%;
 } 
 
 .modal iframe {
     height: 315px;
+}
+
+.modal-head-bg {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#modal-page .modal-card-body {
+    background-color: #000000;
+    padding: 0;
+    width: 560px;
+}
+
+#close-modal {
+    margin: 0 55px 10px 0;
+
 }
 
 /*
