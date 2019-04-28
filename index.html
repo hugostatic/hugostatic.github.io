@@ -213,30 +213,25 @@
                 <div class="columns">
                     <div class="column">
                         <div class="footer-contact-form">
-                            <form>
-                                <div class="field">
-                                    <label class="label">Votre nom</label>
-                                    <div class="control">
-                                        <input class="input" type="text" placeholder="Smith">
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <label class="label">Votre prénom</label>
-                                    <div class="control">
-                                        <input class="input" type="text" placeholder="Alex">
-                                    </div>
-                                </div>
+                            <form method="POST" action="https://formspree.io/jmarck4@gmail.com">
                                 <div class="field">
                                     <label class="label">Votre email</label>
                                     <div class="control">
-                                        <input class="input" type="text" placeholder="alexsmith@gmail.com">
+                                        <input class="input" type="email" name="email" placeholder="alexsmith@gmail.com">
                                     </div>
                                 </div>
                                 <div class="field">
                                     <label class="label">Votre message</label>
                                     <div class="control">
-                                        <textarea class="textarea" placeholder="Comment puis-je vous aider ?"></textarea>
+                                        <textarea class="textarea" name = "message" placeholder="Comment puis-je vous aider ?"></textarea>
                                     </div>
+                                </div>
+                                <div class="field">
+                                    <p class="control">
+                                        <button type="submit" class="button is-danger">
+                                        Envoyer
+                                        </button>
+                                    </p>
                                 </div>
                             </form>
                         </div>
