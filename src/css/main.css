@@ -205,8 +205,6 @@ TEST
     background: linear-gradient(90deg, #4111D1,#52E9E8);
     /* background: -webkit-linear-gradient(90deg, rgb(2, 2, 98), rgb(176, 7, 169));
     background: linear-gradient(90deg, rgb(2, 2, 98), rgb(176, 7, 169)); */
-    padding-top: 40px;
-    padding-bottom: 60px;
 }
 
 .section-test h1 {

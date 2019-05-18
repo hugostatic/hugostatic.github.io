@@ -19,120 +19,131 @@
     <!--    head    -->
     
     <!--    body    -->
-    <body>
+    <body class="has-navbar-fixed-top">
 
-       <!--    header -->
-       <header class="header">
-        <div class="main-menu-area">
+        <!--    navbar  -->
+        <nav class="navbar is-transparent is-fixed-top">
             <div class="container">
-                <div class="columns">
-                    <div class="column">
-
+                <div class="navbar-brand">
+                    <a href="#" class="navbar-item has-text-weight-bold">MYLOGO</a>
+        
+                    <div class="navbar-burger burger" data-target="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                     </div>
-                    <div class="column">
-                        
+                </div>
+        
+                <div class="navbar-menu" id="navMenu">
+                    <div class="navbar-start">
+                        <!-- <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="#" class="navbar-link is-active">Browse</a>
+            
+                            <div class="navbar-dropdown">
+                                <a href="#" class="navbar-item">Amazing Product</a>
+                                <a href="#" class="navbar-item">Superior Quality</a>
+                                <a href="#" class="navbar-item">Another Amazing Product</a>
+                            </div>
+            
+                        </div> -->
+                    </div>
+                    <div class="navbar-end">
+                        <a href="#my-work" class="navbar-item has-text-weight-bold ">My Work</a>
+                        <a href="#playground" class="navbar-item has-text-weight-bold">Playground</a>
+                        <a href="#contact" class="navbar-item has-text-weight-bold">Contact</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>    
-    <!-- <div class="block"> 
-        <header class="header">
-            <a href="#" class="header-logo is-size-5">Mon Portfolio  </a>
-            <nav class="header-menu">
-                <a href="#">Accueil</a>
-                <a href="#">A propos</a>
+        </nav>
+        <!--    navbar  -->
+
+        <!--    HERO SECTION  -->
+        <section class="hero is-fullheight is-default is-bold">
                 
-                <a href="#">Contact</a>
-            </nav>
-        </header>
-    </div> -->
-    <!--    header -->
-
-     <!--    HERO SECTION  -->
-    <section class="hero is-fullheight is-default is-bold">
-              
-        <div class="hero-body">
-            <div class="container">
-                <div class="columns is-vcentered">
-                    <div class="column is-5 is-offset-1 landing-caption">
-                        <h1 class="title is-1 is-bold is-spaced">
-                            Manage, Deploy.
-                        </h1>
-                        <h2 class="subtitle is-5 is-muted">Lorem ipsum sit dolor amet is a dummy text used by typography industry </h2>
-                        <p>
-                            <button class="button is-danger" id="bt-modal">Voir la vidéo</button>
-                        </p>
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column is-5 is-offset-1 landing-caption">
+                            <h1 class="title is-1 is-bold is-spaced">
+                                Manage, Deploy.
+                            </h1>
+                            <h2 class="subtitle is-5 is-muted">Lorem ipsum sit dolor amet is a dummy text used by typography industry </h2>
+                            <p>
+                                <button class="button is-danger" id="bt-modal">Voir la vidéo</button>
+                            </p>
+                        </div>
+                        <div class="column is-5 is-offset-1">
+                            <figure class="image is-4by3">
+                                <img src="src/img/worker.svg" alt="Description">
+                            </figure>
+                        </div>
+        
                     </div>
-                    <div class="column is-5 is-offset-1">
-                        <figure class="image is-4by3">
-                            <img src="src/img/worker.svg" alt="Description">
-                        </figure>
-                    </div>
-    
                 </div>
             </div>
+        </section>
+        <!--    HERO SECTION  -->
+        
+        <!--    MODAL   -->
+        <div class="modal" id="modal-page">
+            <div class="modal-background"></div>
+            <div class="modal-card modal-wrap">
+                <header class=" modal-head-bg has-text-right">
+                    <button class="delete" aria-label="close" id="close-modal"></button>
+                </header>
+                <div class="modal-card-body has-text-centered">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BXArjoEmVa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+            </div>
         </div>
-    </section>
-    <!--    HERO SECTION  -->
-    
-    <!--    MODAL   -->
-    <div class="modal" id="modal-page">
-        <div class="modal-background"></div>
-        <div class="modal-card modal-wrap">
-            <header class=" modal-head-bg has-text-right">
-                <button class="delete" aria-label="close" id="close-modal"></button>
-            </header>
-            <div class="modal-card-body has-text-centered">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/BXArjoEmVa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-        </div>
-    </div>
-    <!--    MODAL   -->
+        <!--    MODAL   -->
 
-    <!--    section  : à propos   -->
-    <section class="section-about"> 
-        <div class="container about">
-            <div class="columns">
-                <div class="column about-single-element">
-                    <h2 class="title is-2 titre-section">Coding</h2>
-                    <i class="fas fa-laptop-code fa-7x"></i>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                        </p>    
-                </div>
-                <div class="column about-single-element">
-                    <h2 class="title is-2 titre-section">Python</h2>
-                    <i class="fab fa-python fa-7x"></i>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
-                </div>
-                <div class="column about-single-element">
-                    <h2 class="title is-2 titre-section">Coffee</h2>
-                    <i class="fas fa-coffee fa-7x"></i>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.    </p>
-                </div>
-            </div>    
-        </div>
-    </section>
-    <!--    section  : à propos   -->
+        <!--    section  : My Work   -->
+        <section class="section section-about" id="my-work"> 
+            <div class="container about">
+                <div class="columns">
+                    <div class="column about-single-element">
+                        <h2 class="title is-2 titre-section">Coding</h2>
+                        <i class="fas fa-laptop-code fa-7x"></i>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                        </p>    
+                    </div>
+                    <div class="column about-single-element">
+                        <h2 class="title is-2 titre-section">Python</h2>
+                        <i class="fab fa-python fa-7x"></i>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+                    </div>
+                    <div class="column about-single-element">
+                        <h2 class="title is-2 titre-section">Coffee</h2>
+                        <i class="fas fa-coffee fa-7x"></i>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.    </p>
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <!--    section  : My work   -->
 
-    
+        
 
-    <!--    PLAYGROUND    -->
-    <section class="section-test">
-        <img class="bd-is-try-it-out" src="src/img/try-it-out.png" width="150" height="65">
-        <div class="container">
-            <content>
-                <h1 class="title is-1">## Playground ##</h1>
-                <script async src="//jsfiddle.net/jmarck4/7vxLqj04/1/embed/html,css,result/dark/"></script>
-            </content>
-        </div>
-    </section>
-    <!--    PLAYGROUND    -->
+        <!--    PLAYGROUND    -->
+        <section class="hero section-test is-fullheight" id="playground">
+            <div class="hero-body">
+                <div class="container">
+                    <img class="bd-is-try-it-out" src="src/img/try-it-out.png" width="150" height="65">
+                
+                    <content>
+                        <h1 class="title is-1">## Playground ##</h1>
+                        <script async src="//jsfiddle.net/jmarck4/7vxLqj04/1/embed/html,css,result/dark/"></script>
+                    </content>
+                </div>
+            </div>        
+        </section>
+        <!--    PLAYGROUND    -->
 
         <!--    Contact    -->
         
-        <footer class="footer">
+        <footer class="footer" id="contact">
             <div class="container">
                 <h2 class="title is-2">Contactez-moi</h2>
                 <div class="columns">
